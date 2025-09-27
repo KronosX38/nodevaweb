@@ -134,13 +134,13 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-18 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img
               src="/nodeva_bco.svg"
               alt="Nodeva"
-              className="hidden h-10 w-auto sm:block"
+              className="hidden h-15 w-auto sm:block"
             />
             <img
               src="/nodeva_mov.svg"

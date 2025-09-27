@@ -31,7 +31,7 @@ export default function Footer() {
               className="block sm:hidden h-auto w-[96px]"
             />
           </Link>
-          <p className="text-sm text-neutral-400">
+          <p className="text-sm text-neutral-400 mt-3">
             Conectamos ideas. Creamos resultados.
           </p>
         </div>
