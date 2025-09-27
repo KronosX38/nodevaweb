@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 286.09">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 34.68px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #d4a413;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        font-family: Poppins-ExtraBold, Poppins;
+        font-size: 72.57px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <g>
+        <polygon class="cls-6" points="110.26 131.61 110.26 0 131.75 0 231.33 131.61 191.07 131.61 139.69 65.19 139.92 131.61 110.26 131.61"/>
+        <polygon class="cls-5" points="172.97 .07 231.74 .07 231.74 77.29 172.97 .07"/>
+      </g>
+      <text class="cls-4" transform="translate(0 277.42)"><tspan class="cls-1" x="0" y="0">C</tspan><tspan x="19.73" y="0">onsul</tspan><tspan class="cls-9" x="99.03" y="0">t</tspan><tspan x="110.3" y="0">o</tspan><tspan class="cls-2" x="129.34" y="0">r</tspan><tspan x="140.82" y="0">ía Emp</tspan><tspan class="cls-8" x="238.7" y="0">r</tspan><tspan x="249.7" y="0">esa</tspan><tspan class="cls-3" x="297.51" y="0">r</tspan><tspan x="308.99" y="0">ial</tspan></text>
+      <text class="cls-7" transform="translate(5.72 225.25) scale(1.13 1)"><tspan x="0" y="0">Nodeva</tspan></text>
+    </g>
+  </g>
+</svg>

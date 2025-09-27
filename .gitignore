@@ -1,0 +1,11 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.log
+.env*
+.DS_Store
+
+# Archivos que no deben ir al repo
+*.zip
+*.rar

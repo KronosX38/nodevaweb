@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #242424;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+
+  /* (opcional) monospace si llegas a usarla */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #242424;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer base {
+  html, body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* === Nodeva – utilidades para rotación lenta de rombos === */
+@media (prefers-reduced-motion: no-preference) {
+  .spin-slow {
+    animation: spin 50s linear infinite;
+  }
+  .spin-slower {
+    animation: spin 80s linear infinite;
+  }
+  .reverse {
+    animation-direction: reverse;
+  }
+  .pause-on-hover:hover {
+    animation-play-state: paused;
+  }
+}
+
+/* Si el usuario prefiere menos movimiento, desactivamos animación */
+@media (prefers-reduced-motion: reduce) {
+  .spin-slow,
+  .spin-slower {
+    animation: none !important;
+  }
+}
+
+/* --- Pulse sutil (zoom in/out MUY suave) --- */
+@keyframes pulse-zoom {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.06); } /* Ajusta 1.04–1.08 a tu gusto */
+}
+
+/* Clases utilitarias (Tailwind v4: utilidades propias en CSS) */
+.anim-slow-rotate {
+  animation: slow-rotate 60s linear infinite;    /* ya la tienes; uso nombre por consistencia */
+  will-change: transform;
+}
+
+.anim-pulse-zoom {
+  animation: pulse-zoom 14s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Respeta accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .anim-slow-rotate,
+  .anim-pulse-zoom {
+    animation: none !important;
+  }
+}
+
+@keyframes slow-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* === Marquee infinito (pausable) === */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } /* nos movemos media pista porque la duplicamos */
+}
+
+/* Respeto a usuarios con reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none !important;
+  }
+}
