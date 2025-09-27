@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+
 // app/aviso-privacidad/page.tsx
 export const metadata = {
   title: "Aviso de Privacidad | Nodeva",
@@ -72,12 +74,11 @@ export default function AvisoPrivacidadPage() {
           tratamiento de sus datos personales (derechos ARCO), conforme a lo
           establecido en la LFPDPPP. Para ejercer dichos derechos, deberá enviar
           una solicitud al correo electrónico:{" "}
-          <a
+          <Link
             href="mailto:info@nodeva.com"
             className="text-[#D4AF37] hover:underline"
           >
-            info@nodeva.com
-          </a>
+          </Link>
           , incluyendo nombre, medio de contacto y descripción clara de la
           solicitud.
         </p>
@@ -87,9 +88,9 @@ export default function AvisoPrivacidadPage() {
           Nodeva podrá modificar el presente Aviso de Privacidad en cualquier
           momento para cumplir con actualizaciones legislativas o políticas
           internas. Las modificaciones estarán disponibles en{" "}
-          <a href="/" className="text-[#D4AF37] hover:underline">
+          <Link href="/" className="text-[#D4AF37] hover:underline">
             www.nodeva.com
-          </a>
+          </Link>
           .
         </p>
       </section>
