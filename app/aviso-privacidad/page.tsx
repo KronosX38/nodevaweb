@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-
 // app/aviso-privacidad/page.tsx
 export const metadata = {
   title: "Aviso de Privacidad | Nodeva",
@@ -101,7 +99,6 @@ export default function AvisoPrivacidadPage() {
         vulnerado, puede acudir al Instituto Nacional de Transparencia, Acceso a
         la Información y Protección de Datos Personales (INAI).
       </p>
-      <Footer />
     </main>
   );
 }
