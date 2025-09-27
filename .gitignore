@@ -1,11 +1,16 @@
-# Node / Next.js
+# dependencias y builds
 node_modules/
 .next/
+dist/
 out/
 *.log
-.env*
-.DS_Store
 
-# Archivos que no deben ir al repo
+# SO/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+
+# zips y binarios pesados
 *.zip
 *.rar
+*.7z
