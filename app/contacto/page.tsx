@@ -59,7 +59,7 @@ export default function ContactPage() {
     const subject = encodeURIComponent("Solicitud de información – Nodeva");
     const body = encodeURIComponent(baseMensaje);
     // usa el correo genérico que prefieras
-    return `mailto:hola@nodeva.mx?subject=${subject}&body=${body}`;
+    return `mailto:hola@nodevaconsultoria.mx?subject=${subject}&body=${body}`;
   }, [baseMensaje]);
 
   const isValid = Object.keys(errors).length === 0 && form.website === "";
@@ -267,7 +267,7 @@ export default function ContactPage() {
               Email:{" "}
               <a
                 className="text-[#D4AF37] underline decoration-[#D4AF37]/40 underline-offset-4 hover:opacity-90"
-                href="mailto:hola@nodeva.mx"
+                href="mailto:hola@nodevaconsultoria.mx"
               >
                 hola@nodeva.mx
               </a>

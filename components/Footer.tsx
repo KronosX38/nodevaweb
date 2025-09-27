@@ -65,7 +65,7 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2 text-sm">
             <li>WhatsApp: +52 999 453 2800</li>
-            <li>info@nodeva.com</li>
+            <li>hola@nodevaconsultoria.com</li>
             <li>
               Calle 60 Col. Centro, edificio Paseo 60 piso, Mérida, Yucatán.
             </li>
