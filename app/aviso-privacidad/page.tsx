@@ -1,5 +1,3 @@
-import { Link } from "lucide-react";
-
 // app/aviso-privacidad/page.tsx
 export const metadata = {
   title: "Aviso de Privacidad | Nodeva",
@@ -9,7 +7,7 @@ export const metadata = {
 
 export default function AvisoPrivacidadPage() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-16 text-neutral-300">
+    <main className="mx-auto mt-10 max-w-5xl px-6 py-16 text-neutral-300">
       <h1 className="text-3xl font-bold text-[#D4AF37]">Aviso de Privacidad</h1>
       <p className="mt-4 text-sm text-neutral-400">
         Última actualización: {new Date().toLocaleDateString("es-MX")}
@@ -73,13 +71,7 @@ export default function AvisoPrivacidadPage() {
           Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al
           tratamiento de sus datos personales (derechos ARCO), conforme a lo
           establecido en la LFPDPPP. Para ejercer dichos derechos, deberá enviar
-          una solicitud al correo electrónico:{" "}
-          <Link
-            href="mailto:info@nodeva.com"
-            className="text-[#D4AF37] hover:underline"
-          >
-          </Link>
-          , incluyendo nombre, medio de contacto y descripción clara de la
+          una solicitud al correo electrónico: {"hola@nodevaconsultoria.mx"}, incluyendo nombre, medio de contacto y descripción clara de la
           solicitud.
         </p>
 
@@ -87,11 +79,7 @@ export default function AvisoPrivacidadPage() {
         <p>
           Nodeva podrá modificar el presente Aviso de Privacidad en cualquier
           momento para cumplir con actualizaciones legislativas o políticas
-          internas. Las modificaciones estarán disponibles en{" "}
-          <Link href="/" className="text-[#D4AF37] hover:underline">
-            www.nodeva.com
-          </Link>
-          .
+          internas. Las modificaciones estarán disponibles en {"https://www.nodevaconsultoria.mx/aviso-privacidad"}.
         </p>
       </section>
 
