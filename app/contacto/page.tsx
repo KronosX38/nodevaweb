@@ -269,7 +269,7 @@ export default function ContactPage() {
                 className="text-[#D4AF37] underline decoration-[#D4AF37]/40 underline-offset-4 hover:opacity-90"
                 href="mailto:hola@nodevaconsultoria.mx"
               >
-                hola@nodeva.mx
+                hola@nodevaconsultoria.mx
               </a>
             </li>
             <li>Horario: L–V 9:00–18:00, Sáb 9:00–14:00</li>
