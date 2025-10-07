@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { LuLightbulb, LuPencilRuler, LuCode, LuRocket } from "react-icons/lu";
+import ElectricBorder from './ElectricBorder'
 
 const STEPS = [
   {
@@ -19,7 +20,7 @@ const STEPS = [
     Icon: LuCode,
   },
   {
-    title: "Despliegue & Soporte",
+    title: "Despliegue",
     desc: "Publicación, monitoreo y mejoras continuas. Mantenimiento y evolución basada en métricas.",
     Icon: LuRocket,
   },
@@ -67,34 +68,35 @@ export default function ProcessSteps() {
             }}
             className="relative"
           >
-            {/* Nodo conector (desktop) */}
-            <div
-              aria-hidden
-              className="absolute left-1/2 top-10 hidden -translate-x-1/2 lg:block"
+            <ElectricBorder
+              color="#D4AF37"
+              thickness={1}
+              speed={0.8}
+              chaos={0.4}
+              className=""
+              style={{}}
             >
-             
-            </div>
-
-            <div className="rounded-2xl border border-white/10 bg-[#242424] p-6 h-full">
-              <div className="flex items-start gap-4">
-                <div className="rounded-xl border border-[#D4AF37]/30 bg-white/5 p-3 text-[#D4AF37] shrink-0">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <div className="min-w-0">
-                  <div className="flex items-center gap-3">
-                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-lg border border-white/15 text-xs text-white/80">
-                      {i + 1}
-                    </span>
-                    <h3 className="text-base md:text-lg font-semibold text-white whitespace-normal break-words">
-                      {title}
-                    </h3>
+              <div className="rounded-2xl border border-white/10 bg-[#242424] p-6 h-full">
+                <div className="flex items-start gap-4">
+                  <div className="rounded-xl border border-[#D4AF37]/30 bg-white/5 p-3 text-[#D4AF37] shrink-0">
+                    <Icon className="h-6 w-6" />
                   </div>
-                  <p className="mt-2 text-sm leading-relaxed text-neutral-300">
-                    {desc}
-                  </p>
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-3">
+                      <span className="inline-flex h-6 w-6 items-center justify-center rounded-lg border border-white/15 text-xs text-white/80">
+                        {i + 1}
+                      </span>
+                      <h3 className="text-base md:text-lg font-semibold text-white whitespace-normal break-words">
+                        {title}
+                      </h3>
+                    </div>
+                    <p className="mt-2 text-sm leading-relaxed text-neutral-300">
+                      {desc}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </ElectricBorder>
           </motion.li>
         ))}
       </motion.ol>
